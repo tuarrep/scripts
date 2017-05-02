@@ -1,0 +1,5 @@
+# /etc/udev/rules.d/51-android.rules
+# Udev rules for my phone to solve 'error: insufficient permissions for device' error
+# See https://developer.android.com/studio/run/device.html#VendorIds to replace '18d1' by appropriate vendor id
+
+SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", MODE="0666", GROUP="plugdev"
