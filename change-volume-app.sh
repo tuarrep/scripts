@@ -21,6 +21,7 @@ pactl list sink-inputs |while read line; do \
             echo "$current_sink_num" "$app_name_check"
 
             pactl set-sink-input-volume "$current_sink_num" "$volume"%
+            notify-send -a change-volume -i multimedia-audio-player "Volume set" "$app_name volume set to $volume"
         fi
     fi
 done
