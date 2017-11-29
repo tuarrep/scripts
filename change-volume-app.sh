@@ -1,6 +1,9 @@
 #!/bin/sh
 # based on https://unix.stackexchange.com/a/209047
 
+# Sample usage: ./change-colume-app.sh chromium 50
+# Set Chromium volume at 50% (on some systems you can go up to 120%)
+
 LANGUAGE="en_US"
 
 app_name="$1"
